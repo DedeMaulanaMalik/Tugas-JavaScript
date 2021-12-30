@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <select name="" id="daftar" onchange="tampil()">
+        <option value="">--Pilih Hewan--</option>
+        <option value="burung">Burung</option>
+        <option value="gajah">Gajah</option>
+        <option value="kelinci">Kelinci</option>
+        <option value="kucing">Kucing</option>
+        <option value="sapi">Sapi</option>
+        <option value="zebra">Zebra</option>
+    </select>
+<div id="Hasil"></div>
+
+<script>
+    let daftar = document.getElementById("daftar")
+    let Hasil = document.getElementById("Hasil")
+
+    function tampil() {
+        switch (daftar.value){
+            case "burung":
+                Hasil.innerHTML = '<img src="burung.jpg" alt="">'
+                alert("Ini adalah gambar burung")
+                break;
+
+            case "gajah":
+                Hasil.innerHTML = '<img src="gajah.jpg" alt="">'
+                alert("Ini adalah gambar gajah")
+                break;
+
+            case "kelinci":
+                Hasil.innerHTML = '<img src="kelinci.jpg" alt="">'
+                alert("Ini adalah gambar kelinci")
+                break;
+
+            case "kucing":
+                Hasil.innerHTML = '<img src="kucing.jpg" alt="">'
+                alert("Ini adalah gambar kucing")
+                break;
+
+            case "sapi":
+                Hasil.innerHTML = '<img src="sapi.jpg" alt="">'
+                alert("Ini adalah gambar sapi")
+                break;
+
+            case "zebra":
+                Hasil.innerHTML = '<img src="zebra.jpg" alt="">'
+                alert("Ini adalah gambar zebra")
+                break;
+
+            default:
+                hasil.innerHTML= "pilih gambarnya gaes"
+
+        }
+     }
+</script>
+</body>
